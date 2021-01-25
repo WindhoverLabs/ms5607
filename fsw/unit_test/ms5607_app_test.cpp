@@ -225,6 +225,8 @@ void Test_MS5607_InitData(void)
     /* Set a fail result */
     int32 expected = CFE_SUCCESS;
 
+    oMS5607.InitApp();
+
     /* Execute the function being tested */
     oMS5607.InitData();
 
